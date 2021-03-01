@@ -1,0 +1,141 @@
+.l-header {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 6rem;
+    background-color: white;
+    // display: flex;
+    @include breakpoint( tablet ) {
+        height: 7.5rem;
+    
+    }
+
+    &__left {
+        padding: 0.5rem 0 0 1rem;
+
+        @include breakpoint( pc ) {
+            padding-left: 5rem;
+        
+        }
+
+        &__text {
+            font-weight: 600;
+            color: #333333;
+            line-height: 1.6rem;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.2rem;
+                position: absolute;
+                top: 3.5rem;
+                left: 14.5rem;
+                
+                @include breakpoint( pc ) {
+                    font-size: 1.4rem;
+                    left: 19.5rem;
+                }
+            
+            }
+        }
+
+        &__image {
+            width: 9rem;
+            height: 3.1rem;
+            object-fit: cover;
+
+            @include breakpoint( tablet ) {
+                width: 12.8rem;
+                height: 4.465rem;
+                padding: 1rem 0 0 0.5rem;
+            
+            }
+        }
+    }
+
+    &__right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 6rem;
+        width: 7.5rem;
+        background-color: #DA6B64;
+
+        @include breakpoint( tablet ) {
+            top: 1.4rem;
+            right: 1.5rem;
+            width: auto;
+            height: auto;
+            border-radius: 30px;
+            padding: 1.2rem 4rem 1.2rem 4rem;
+            // cursor: pointer;
+            
+            &:hover {
+                opacity: 1;
+                background-color: #d84940;
+            }
+        }
+
+        @include breakpoint( pc ) {
+            right: 5rem;
+        
+        }
+
+        &__image {
+            margin: 1rem 2.7rem 0;
+            width: 2rem;
+            height: 2.4rem;
+            object-fit: cover;
+
+            @include breakpoint( tablet ) {
+                display: none;
+            
+            }
+        }
+
+        &__text {
+            // margin-top: -4px;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            color: white;
+            text-align: center;
+
+            @include breakpoint( tablet ) {
+                display: none;
+            
+            }
+
+            a {
+                color: white;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &__text-desktop {
+            display: none;
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: white;
+            // line-height: 1.9rem;
+
+            a {
+                font-size: 1.2rem;
+                font-weight: 300;
+                color: white;
+
+                @include breakpoint( pc ) {
+                    font-size: 1.4rem;
+                
+                }
+            }
+
+            @include breakpoint( tablet ) {
+                display: block;
+            
+            }
+
+        }
+    }
+}

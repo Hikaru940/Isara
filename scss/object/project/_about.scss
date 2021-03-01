@@ -1,0 +1,254 @@
+.p-about {
+    background-color: #FEF5E0;
+    position: relative;
+    // text-align: center;
+    padding-bottom: 7rem;
+
+    &__round {
+        position: absolute;
+        top: -30px;
+        left: 44%;
+        width: 60px;
+        border-radius: 50px;
+        color: white;
+        background-color: #EBB94D;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 6rem;
+        font-weight: 400;
+        // display: inline-block;
+
+        @include breakpoint( tablet ) {
+            top: -40px;
+            left: 45%;
+            width: 80px;
+            border-radius: 60px;
+            font-size: 1.4rem;
+            line-height: 8rem;
+        
+        }
+
+        @include breakpoint( pc ) {
+            left: 47%;
+        
+        }
+    }
+
+    &__head {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 4rem;
+        color: #333333;
+        width: 100vw;
+        margin: 0 auto;
+        padding-top: 8.5rem;
+        position: relative;
+        text-align: center;
+
+        @include breakpoint( tablet ) {
+            font-size: 2.4rem;
+            padding-top: 11rem;
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 2.8rem;
+        
+        }
+        
+        &::before {
+            position: absolute;
+            content: "";
+            top: 60px;
+            left: 12px;
+            width: 3rem;
+            height: 3rem;
+            border-top: 4px solid #ebb94d;
+            border-left: 4px solid #ebb94d;
+
+            @include breakpoint( tablet ) {
+                width: 5rem;
+                height: 5rem;
+                top: 70px;
+                left: 22px;
+            }
+
+            @include breakpoint( pc ) {
+                left: 180px;
+            
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 155px;
+            right: 25px;
+            width: 3rem;
+            height: 3rem;
+            border-right: 4px solid #ebb94d;
+            border-bottom: 4px solid #ebb94d;
+
+            @include breakpoint( tablet ) {
+                width: 5rem;
+                height: 5rem;
+                top: 160px;
+                right: 35px;
+            
+            }
+
+            @include breakpoint( pc ) {
+                right: 190px;
+            
+            }
+        }
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        font-weight: 600;
+        color: #333;
+        padding-top: 4rem;
+        text-align: center;
+
+        @include breakpoint( tablet ) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            padding-top: 6.5rem;
+        
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 2rem;
+            line-height: 3.2rem;
+        
+        }
+    }
+
+    &__skills {
+        background-color: white;
+        border-radius: 3px;
+        border: 2px solid #EBB94D;
+        margin: 3.5rem 2rem 0;
+        padding: 1.5rem 0.5rem 3rem;
+
+        @include breakpoint( tablet ) {
+            padding: 3.3rem 2.5rem 5rem;
+        
+        }
+
+        &__text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 2.4rem;
+            color: #333;
+            text-align: center;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 2rem;
+                line-height: 3.2rem;
+            
+            }
+        }
+    }
+
+    &__skill {
+        width: 11rem;
+        text-align: center;
+        padding: 1rem 0rem 0.5rem;
+
+        @include breakpoint( tablet ) {
+            width: 12.5rem;
+            padding: 2.5rem 0rem 0;
+        
+        }
+
+        @include breakpoint( pc ) {
+            width: 13.5rem;
+        
+        }
+
+        p {
+            margin-top: 1rem;
+            font-weight: 300;
+            line-height: 1.6rem;
+            color: #333;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.2rem;
+                line-height: 1.9rem;
+            
+            }
+
+            
+        }
+
+        &__image1 {
+            margin: 0 auto;
+            width: 32px;
+            height: 30px;
+            object-fit: cover;
+
+            @include breakpoint( tablet ) {
+                width: 61px;
+                height: 57px;
+            }
+            
+        }
+
+        &__image2 {
+            margin: -1.1rem auto 0;
+            width: 31px;
+            height: 30px;
+            object-fit: cover;
+            
+            @include breakpoint( tablet ) {
+                width: 73px;
+                height: 70px;
+            }
+        }
+
+        &__image3 {
+            margin: 0 auto;
+            width: 23px;
+            height: 30px;
+            object-fit: cover;
+            
+            @include breakpoint( tablet ) {
+                width: 47px;
+                height: 59px;
+            }
+        }
+
+        &__image4 {
+            margin: 0 auto;
+            width: 31px;
+            height: 30px;
+            object-fit: cover;
+            
+            @include breakpoint( tablet ) {
+                width: 55px;
+                height: 53px;
+            }
+        }
+
+        &__image5 {
+            margin: 0 auto;
+            width: 75px;
+            height: 30px;
+            object-fit: cover;
+            
+            @include breakpoint( tablet ) {
+                width: 125px;
+                height: 50px;
+            }
+        }
+    }
+}

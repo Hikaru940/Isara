@@ -1,0 +1,8 @@
+.l-main {
+    padding-top: 6rem;
+
+    @include breakpoint( tablet ) {
+        padding-top: 7.5rem;
+    
+    }
+}

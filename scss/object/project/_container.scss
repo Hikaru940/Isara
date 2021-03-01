@@ -1,0 +1,24 @@
+.p-container-main-visual {
+    position: absolute;
+    top: 2rem;
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+
+    @include breakpoint( tablet ) {
+        top: 10rem;
+    
+    }
+}
+
+.p-container-introduction {
+    position: absolute;
+    top: 3rem;
+    z-index: 10;
+}
+
+.p-container-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

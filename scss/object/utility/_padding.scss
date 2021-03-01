@@ -1,0 +1,39 @@
+.u-margin-sns {
+    padding: 2.5rem 0 3rem;
+}
+
+.u-padding-introduction-text1 {
+    padding-top: 4rem;
+
+    @include breakpoint( tablet ) {
+        padding-top: 6.5rem;
+    
+    }
+}
+
+.u-padding-introduction-text2 {
+    padding-top: 4rem;
+
+    @include breakpoint( tablet ) {
+        padding-top: 2rem;
+    
+    }
+}
+
+.u-padding-introduction-text3 {
+    padding-top: 3.3rem;
+
+    @include breakpoint( tablet ) {
+        padding-top: 0;
+    
+    }
+}
+
+.u-padding-introduction-text4 {
+    padding-top: 4rem;
+
+    @include breakpoint( tablet ) {
+        padding-top: 2.5rem;
+    
+    }
+}

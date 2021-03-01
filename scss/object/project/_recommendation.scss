@@ -1,0 +1,110 @@
+.p-recommendation {
+    color: white;
+    background-color: #EBB94D;
+    text-align: center;
+    // cursor: pointer;
+    padding-top: 2rem;
+
+    @include breakpoint( tablet ) {
+        padding-top: 3rem;
+    
+    }
+
+    &__text1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2.4rem;
+        
+
+        @include breakpoint( tablet ) {
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 2.6rem;
+            
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 2rem;
+            line-height: 3.2rem;
+        
+        }
+        
+    }
+
+    &__text2 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 2.2rem;
+        color: #c7254e;
+        background-color: #F9F2F4;
+        width: 400px;
+        margin: 1.5rem auto 0;
+        border-radius: 4px;
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+        @include breakpoint( pc ) {
+            font-size: 1.8rem;
+            line-height: 2.9rem;
+            width: 500px;
+        }
+    }
+
+    &__button {
+        background-color: #DA6B64;
+        border-width: 0;
+        border-radius: 50px;
+        margin-top: 2.5rem;
+        width: 90%;
+        padding: 2rem 0 2rem;
+
+        @include breakpoint( tablet ) {
+            margin-top: 1.2rem;
+            
+        }
+
+        @include breakpoint( pc ) {
+            margin-top: 4.5rem;
+            margin-bottom: 3rem;
+            padding: 3.5rem 0 3.5rem;
+            border-radius: 75px;
+        }
+
+        &:hover {
+            background-color: #d84940;
+        }
+
+        &__text {
+            a {
+                font-size: 2rem;
+                font-weight: 600;
+                line-height: 3.2rem;
+                color: white;
+
+                @include breakpoint( pc ) {
+                    font-size: 2.8rem;
+                    line-height: 4.5rem;
+                
+                }
+            }
+        }
+    }
+
+    &__text3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2.4rem;
+        margin-top: 3rem;
+
+        @include breakpoint( tablet ) {
+            font-size: 1.8rem;
+            line-height: 2.9rem;
+        
+        }
+
+        @include breakpoint( pc ) {
+            margin-top: 4rem;
+            font-size: 2.1rem;
+            line-height: 3.4rem;
+        }
+    }
+}
