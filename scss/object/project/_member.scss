@@ -1,0 +1,178 @@
+.p-member  {
+    background-image: url("../../../img/teacherbg.jpg");
+    height: 1230px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+
+    @include breakpoint( tablet ) {
+        height: 1640px;
+    
+    }
+
+    @include breakpoint( pc ) {
+        height: 870px;
+    
+    }
+
+    &__text1 {
+        font-size: 1.8rem;
+        line-height: 4rem;
+        font-weight: 600;
+        padding: 7rem 0 0 0;
+
+        .far {
+            margin-right: 0.3rem;
+        }
+
+        @include breakpoint( tablet ) {
+            font-size: 2.4rem;
+            line-height: 4rem;
+            font-weight: 600;
+            padding: 9rem 0 0 0;
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 2.8rem;
+            padding: 8.5rem 0 0 0;
+        }
+    }
+
+    &__text2 {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        font-weight: 600;
+        padding: 4.5rem 0 1.5rem;
+
+        @include breakpoint( tablet ) {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            padding: 4rem 0 0;
+        }
+    }
+
+    &__teacher {
+        border: 3px solid white;
+        margin: 11.5rem 1rem 0;
+        // height: 19.5rem;
+        padding: 0 1rem 2.5rem;
+        position: relative;
+
+        @include breakpoint( tablet ) {
+            margin: 20rem 5rem 0;
+            padding: 0 4rem 5rem;
+        }
+
+        @include breakpoint( pc ) {
+            margin: 21rem 1.5rem 0;
+            padding: 0 4.8rem 5rem;
+            width: 365px;
+        }
+
+        &__image {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            top: -90px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            // left: 39%;
+            border-radius: 60px;
+
+            @include breakpoint( tablet ) {
+                width: 198px;
+                height: 198px;
+                border-radius: 50%;
+                top: -170px;
+                // left: 37%;
+            }
+
+        }
+
+        &__text1 {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 300;
+            padding-top: 4rem;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+        }
+
+        &__text2 {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 300;
+            padding-top: 1.5rem;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+        }
+
+        &__text3 {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 300;
+            padding-top: 1.5rem;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+        }
+
+        &__text4 {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 300;
+            padding-top: 2.3rem;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+        }
+    }
+}

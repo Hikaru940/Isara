@@ -1,0 +1,320 @@
+.p-steps {
+    background-image: url("../../../img/aboutsecondbgsp.jpg");
+    height: 620px;
+    padding: 4.5rem 3rem 4rem;
+    text-align: center;
+
+    @include breakpoint( tablet ) {
+        background-image: url("../../../img/aboutsecondbg.jpg");
+        height: 830px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 6rem 3rem 5.5rem;
+    }
+    @include breakpoint( pc ) {
+        height: 490px;
+        padding: 6rem 0 5.5rem;
+    }
+
+    &__head {
+        color: white;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        font-weight: 600;
+
+        @include breakpoint( tablet ) {
+            font-size: 2.4rem;
+            line-height: 3rem;
+            font-weight: 600;
+        
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 2.8rem;
+            line-height: 4rem;
+        
+        }
+    }
+
+    &__text1, &__text2 {
+        color: white;
+        font-size: 1.3rem;
+        line-height: 2.1rem;
+        font-weight: 600;
+
+        @include breakpoint( tablet ) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            font-weight: 600;
+        
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 2rem;
+            line-height: 3.2rem;
+        
+        }
+
+        span {
+            color: #EBB94D;
+        }
+    }
+
+    &__text1 {
+        padding-top: 2rem;
+
+        @include breakpoint( tablet ) {
+            padding-top: 2.5rem;
+        
+        }
+    }
+
+    &__text2 {
+        padding-top: 1.5rem;
+
+        @include breakpoint( tablet ) {
+            padding: 1rem;
+        
+        }
+    }
+
+    &__first, &__second, &__third {
+        background-color: white;
+        width: 100%;
+        border-radius: 5px;
+        // height: 10.5rem;
+
+        @include breakpoint( tablet ) {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        @include breakpoint( pc ) {
+            width: 32%;
+        
+        }
+    }
+
+    &__first {
+        padding: 1.5rem 4.5rem 2rem;
+
+        @include breakpoint( tablet ) {
+            padding: 3rem 3rem 3.5rem;
+        
+        }
+
+        @include breakpoint( pc ) {
+            margin: 0 0.5rem 0;
+        
+        }
+
+        &__text1 {
+            color: white;
+            background-color: #EBB94D;
+            border-radius: 5px;
+            
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 600;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+        }
+
+        &__text2 {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 600;
+            padding-top: 1.5rem;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.2rem;
+                line-height: 1.9rem;
+                padding-top: 3rem;
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            
+            }
+        }
+
+        &__text3 {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 600;
+            padding-top: 0.5rem;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                padding-top: 2rem;
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+        }
+    }
+    &__second {
+        margin-top: 1.5rem;
+        padding: 1.5rem 4.5rem 2rem;
+
+        @include breakpoint( tablet ) {
+            margin-top: 2rem;
+            padding: 3rem 3rem 3.5rem;
+        }
+
+        @include breakpoint( pc ) {
+            margin: 0 0.5rem 0;
+        
+        }
+
+        &__text1 {
+            color: white;
+            background-color: #EBB94D;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 600;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+        }
+
+        &__text2 {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 600;
+            padding-top: 1.5rem;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.2rem;
+                line-height: 1.9rem;
+                padding-top: 3rem;
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            
+            }
+        }
+
+        &__text3 {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 600;
+            padding-top: 0.5rem;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                padding-top: 2rem;
+                
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+        }
+    }
+    &__third {
+        margin-top: 1.5rem;
+        padding: 1.5rem 4.5rem 2rem;
+
+        @include breakpoint( tablet ) {
+            margin-top: 2rem;
+            padding: 3rem 3rem 3.5rem;
+        }
+
+        @include breakpoint( pc ) {
+            margin: 0 0.5rem 0;
+        
+        }
+        &__text1 {
+            color: white;
+            background-color: #EBB94D;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 600;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+        }
+
+        &__text2 {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 600;
+            padding-top: 1.5rem;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.2rem;
+                line-height: 1.9rem;
+                padding-top: 3rem;
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            
+            }
+        }
+
+        &__text3 {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 600;
+            padding-top: 0.5rem;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                padding-top: 2rem;
+                
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+        }
+    }
+
+}

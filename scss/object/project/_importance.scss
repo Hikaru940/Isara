@@ -1,0 +1,33 @@
+.p-importance {
+    background-color: #016EA9;
+    color: white;
+    text-align: center;
+    padding: 2.2rem 0 2.2rem;
+
+    @include breakpoint( tablet ) {
+        padding: 4rem 0 4rem;
+    
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        font-weight: 600;
+
+        @include breakpoint( tablet ) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 2rem;
+            line-height: 3.2rem;
+        
+        }
+
+        span {
+            color: #ebb94d;
+        }
+    }
+}

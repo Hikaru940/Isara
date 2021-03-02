@@ -1,0 +1,107 @@
+.p-learning {
+    // padding: 0 0 0 3.5rem;
+    text-align: center;
+
+    &__head {
+        padding: 5rem 0 0 0;
+        font-size: 1.8rem;
+        line-height: 4rem;
+        color: #333;
+        font-weight: 600;
+
+        @include breakpoint( tablet ) {
+            font-size: 2.4rem;
+            padding: 5.8rem 0 0 0;
+        
+
+            @include breakpoint( pc ) {
+                font-size: 2.8rem;
+            
+            }
+        }
+
+        span {
+            font-size: 1.2rem;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.4rem;
+            
+            }
+        }
+
+        
+    }
+
+    &__text1 {
+        padding: 5rem 0 0 0;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        color: #333;
+        font-weight: 300;
+
+        @include breakpoint( tablet ) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            padding: 3.5rem 0 0 0;
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 2rem;
+            line-height: 3.2rem;
+        
+        }
+    }
+
+    &__text2 {
+        padding: 2rem 0 0 0;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 3.5rem;
+
+
+        @include breakpoint( tablet ) {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            padding: 5.5rem 0 0 0;
+            margin-bottom: 5rem;
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        
+        }
+    }
+
+    &__features {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0 0 0;
+
+        @include breakpoint( tablet ) {
+            padding: 6rem 0 0 0;
+        
+        }
+
+        img {
+            margin: 0 0.5rem 0;
+            width: 85px;
+            height: 85px;
+            object-fit: cover;
+
+            @include breakpoint( tablet ) {
+                width: 180px;
+                height: 180px;
+                margin: 0 1rem 0;
+            
+            }
+
+            @include breakpoint( pc ) {
+                margin: 0 2rem 0;
+            
+            }
+        }
+    }
+}

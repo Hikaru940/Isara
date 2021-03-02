@@ -4,3 +4,11 @@
     
     }
 }
+
+.u-display-br-support {
+    display: none;
+    @include breakpoint( tablet ) {
+        display: block;
+    
+    }
+}

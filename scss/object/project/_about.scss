@@ -7,12 +7,14 @@
     &__round {
         position: absolute;
         top: -30px;
-        left: 44%;
+        left: 0;
+        right: 0;
+        margin: auto;
         width: 60px;
         border-radius: 50px;
         color: white;
         background-color: #EBB94D;
-        margin: 0 auto;
+        // margin: 0 auto;
         text-align: center;
         font-size: 1.2rem;
         line-height: 6rem;
@@ -21,7 +23,7 @@
 
         @include breakpoint( tablet ) {
             top: -40px;
-            left: 45%;
+            // left: 45%;
             width: 80px;
             border-radius: 60px;
             font-size: 1.4rem;
@@ -29,10 +31,6 @@
         
         }
 
-        @include breakpoint( pc ) {
-            left: 47%;
-        
-        }
     }
 
     &__head {
