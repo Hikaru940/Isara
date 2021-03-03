@@ -12,3 +12,26 @@
     
     }
 }
+
+.u-display-br-flow {
+    display: none;
+    @include breakpoint( tablet ) {
+        display: block;
+    
+    }
+}
+
+.u-display-gift-sp {
+    @include breakpoint( tablet ) {
+        display: none;
+    
+    }
+}
+
+.u-display-gift-desktop {
+    display: none;
+    @include breakpoint( tablet ) {
+        display: block;
+    
+    }
+}

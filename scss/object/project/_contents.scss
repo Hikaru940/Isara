@@ -1,0 +1,143 @@
+.p-contents {
+    background-image: url("../../../img/classbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 1000px;
+    text-align: center;
+
+    @include breakpoint( tablet ) {
+        height: 1100px;
+    
+    }
+
+    @include breakpoint( pc ) {
+        height: 880px;
+    
+    }
+
+    &__head {
+        padding-top: 5rem;
+        font-size: 1.8rem;
+        line-height: 4rem;
+        font-weight: 600;
+        color: white;
+
+        @include breakpoint( tablet ) {
+            padding-top: 6.5rem;
+            font-size: 2.4rem;
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 2.8rem;
+            padding-top: 9.8rem;
+        }
+    }
+
+    &__text {
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        font-weight: 600;
+        color: white;
+
+        @include breakpoint( tablet ) {
+            padding-top: 1rem;
+            padding-bottom: 4.5rem;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            padding-bottom: 8rem;
+        }
+    }
+
+    &__feature {
+        margin: 1.5rem 1rem 0;
+        
+        @include breakpoint( tablet ) {
+            margin: 1.5rem 10rem;
+        
+        }
+
+        @include breakpoint( pc ) {
+            margin: 0 1.5rem;
+            width: 370px;
+        }
+
+        &__text1 {
+            font-size: 1.5rem;
+            line-height: 2.4rem;
+            font-weight: 600;
+            color: white;
+            background-color: #016EA9;
+            border-radius: 5px 5px 0 0;
+            padding: 1.7rem 0;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 2rem;
+                line-height: 3.2rem;
+            
+            }
+        }
+
+        &__text2 {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 600;
+            color: black;
+            background-color: white;
+            border-right: 2px solid #016EA9;
+            border-left: 2px solid #016EA9;
+            border-bottom: 1px dotted #E5E5E5;
+            padding: 1rem 0;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+        }
+
+        &__text-bottom {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 600;
+            color: black;
+            background-color: white;
+            border-right: 2px solid #016EA9;
+            border-left: 2px solid #016EA9;
+            border-bottom: 2px solid #016EA9;
+            border-radius: 0 0 5px 5px;
+            padding: 1rem 0;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.p-Bangkok {
+    background-image: url("../../../img/bangkokbg.jpg");
+    background-repeat: no-repeat;
+    background-position: 20% center;
+    background-size: cover;
+    height: 380px;
+    padding: 0 3.4rem 0 3.4rem;
+    color: white;
+
+    @include breakpoint( tablet ) {
+        background-position: center center;
+        padding: 0 0 0 6rem;
+        height: 400px;
+    }
+
+    @include breakpoint( pc ) {
+        height: 510px;
+        padding: 0 0 0 10rem;
+    }
+
+    &__head {
+        padding-top: 4.5rem;
+        text-align: center;
+        font-size: 2.4rem;
+        line-height: 4rem;
+        font-weight: 600;
+
+        @include breakpoint( tablet ) {
+            text-align: left;
+            padding-top: 6.5rem;
+        }
+
+        @include breakpoint( pc ) {
+            padding-top: 10.5rem;
+        
+        }
+    }
+
+    &__text1 {
+        padding-top: 3rem;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        font-weight: 300;
+
+        @include breakpoint( pc ) {
+            padding-top: 3.5rem;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
+    }
+
+    &__lists {
+        margin: 1rem 0 0 0;
+        list-style-type: disc;
+        padding-left: 2rem;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        font-weight: 600;
+
+        @include breakpoint( tablet ) {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        
+        }
+
+        li {
+            padding: 0.5rem 0;
+            list-style-type: disc;
+        }
+    }
+
+    &__text2 {
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        font-weight: 600;
+
+        @include breakpoint( tablet ) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 2rem;
+            line-height: 3.2rem;
+        
+        }
+    }
+}

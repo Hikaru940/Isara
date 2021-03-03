@@ -1,0 +1,17 @@
+.c-flowline-1, .c-flowline-2 {
+    display: none;
+
+    @include breakpoint( tablet ) {
+        display: block;
+        // width: calc(100%-300px);
+        margin: 0 auto;
+        max-width: 100%;
+        width: 70%;
+        height: 3.5rem;
+    
+    }
+
+    @include breakpoint( pc ) {
+        height: auto;
+    }
+}

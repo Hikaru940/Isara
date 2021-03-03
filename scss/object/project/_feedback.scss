@@ -1,0 +1,123 @@
+.p-feedback {
+    padding-bottom: 3rem;
+    @include breakpoint( tablet ) {
+        padding-bottom: 5.5rem;
+    
+    }
+    &__head {
+        font-size: 1.8rem;
+        line-height: 2.9rem;
+        font-weight: 600;
+        color: #333;
+        text-align: center;
+        padding-top: 2.5rem;
+
+        @include breakpoint( tablet ) {
+            font-size: 2.4rem;
+            line-height: 3.8rem;
+            padding-top: 4.5rem;
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 2.8rem;
+            line-height: 4.5rem;
+        
+        }
+    }
+
+    &__text1 {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        font-weight: 600;
+        color: #333;
+        text-align: center;
+        padding-top: 2rem;
+
+        @include breakpoint( tablet ) {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        
+        }
+    }
+    
+    &__text2 {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        font-weight: 300;
+        color: #333;
+        text-align: center;
+        padding-top: 3.5rem;
+
+        @include breakpoint( pc ) {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            padding-top: 4rem;
+        }
+    }
+
+    &__message {
+        display: flex;
+        padding: 3rem 1rem 2rem;
+
+        @include breakpoint( tablet ) {
+            padding: 3.5rem 3.5rem 0.5rem 2rem;
+        
+        }
+
+        @include breakpoint( pc ) {
+            padding: 3.5rem 0 0.5rem 0;
+            justify-content: center;
+        
+        }
+        &__image {
+            width: 33%;
+            height: auto;
+            object-fit: cover;
+            margin-right: 1.5rem;
+            border: 2pxs solid #EBB94D;
+
+            @include breakpoint( tablet ) {
+                margin-right: 3rem;
+            
+            }
+
+            @include breakpoint( pc ) {
+                width: 245px;
+                height: 245px;
+            
+            }
+        }
+
+        &__text1 {
+            font-size: 1.8rem;
+            line-height: 2.9rem;
+            font-weight: 400;
+            color: #777;
+
+            @include breakpoint( tablet ) {
+                margin-top: 1.7rem;
+            
+            }
+
+            @include breakpoint( pc ) {
+                width: 483px;
+            
+            }
+        }
+        &__text2 {
+            font-style: italic;
+            text-decoration: underline;
+            font-size: 1.5rem;
+            line-height: 2.4rem;
+            font-weight: 400;
+            color: #777;
+            padding-top: 2rem;
+        }
+    }
+}

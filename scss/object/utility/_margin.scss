@@ -1,0 +1,5 @@
+.u-margin-second-panel {
+    @include breakpoint( tablet ) {
+        margin-top: 4rem;
+    }
+}
