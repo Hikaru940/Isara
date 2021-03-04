@@ -1,0 +1,110 @@
+.p-faq {
+    padding-bottom: 4rem;
+
+    @include breakpoint( tablet ) {
+        padding-bottom: 6rem;
+    
+    }
+
+    &__head {
+        font-size: 1.8rem;
+        line-height: 4rem;
+        font-weight: 600;
+        color: #333;
+        padding-top: 4.5rem;
+        text-align: center;
+
+        @include breakpoint( tablet ) {
+            font-size: 2.4rem;
+            padding-top: 5.5rem;
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 2.8rem;
+        
+        }
+    }
+
+    &__content {
+        margin-top: 0.5rem;
+        
+        &__head {
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid #E5E5E5;
+            padding: 1rem 4rem 1rem 1rem;
+            position: relative;
+            border-radius: 2px 2px 0 0;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.6rem;
+                line-height: 1.8rem;
+                padding: 2rem 4rem 2rem 2rem;
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 2rem;
+                line-height: 2.2rem;
+            
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 14px;
+                top: 37%;
+                width: 10px;
+                height: 10px;
+                border-top: solid 4px #E5E5E5;
+                border-right: solid 4px #E5E5E5;
+                transform: rotate(135deg);
+
+                @include breakpoint( tablet ) {
+                    right: 23px;
+                
+                }
+
+                @include breakpoint( pc ) {
+                    border-top: solid 6px #E5E5E5;
+                    border-right: solid 6px #E5E5E5;
+                    width: 14px;
+                    height: 14px;
+                }
+    
+            }
+
+            &.open::after {
+                transform: rotate(-45deg);
+                top: 40%;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__text {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 600;
+            color: #333;
+            border-right: 1px solid #FCFCFC;
+            border-bottom: 1px dotted #E5E5E5;
+            padding: 2rem 2rem 3.5rem 2rem;
+
+            @include breakpoint( tablet ) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+            
+            }
+
+            @include breakpoint( pc ) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            
+            }
+        }
+    }
+}

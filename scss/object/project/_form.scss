@@ -1,0 +1,127 @@
+.p-form {
+    background-color: #EBB94D;
+
+    &__head {
+        font-size: 1.8rem;
+        line-height: 4rem;
+        font-weight: 600;
+        color: #333;
+        text-align: center;
+        padding-top: 4.5rem;
+
+        @include breakpoint( tablet ) {
+            font-size: 2.4rem;
+            padding-top: 6.5rem;
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 2.8rem;
+
+        
+        }
+
+        .far {
+            margin-right: 0.1rem;
+        }
+
+        // img {
+        //     display: inline-block;
+        //     width: 16px;
+        //     height: 18px;
+        //     object-fit: cover;
+        //     color: black;
+        // }
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        font-weight: 600;
+        color: #333;
+        text-align: center;
+        padding-top: 2.3rem;
+
+        @include breakpoint( tablet ) {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+
+        
+        }
+    }
+
+    &__contact {
+        color: #333;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        font-weight: 400;
+        margin: 3rem 1.5rem 0;
+
+        @include breakpoint( tablet ) {
+            margin: 3rem 13rem 0;
+        
+        }
+
+        @include breakpoint( pc ) {
+            margin: 3rem 23.5rem 0;
+        
+        }
+
+        input, textarea {
+            display: inline-block;
+            width: 100%;
+            border: none;
+            padding-left: 1rem;
+            
+        }
+
+        &__surname {
+            height: 5.5rem;
+            border-radius: 7px;
+        }
+        
+        &__name {
+            margin-top: 2.5rem;
+            height: 5.5rem;
+            border-radius: 7px;
+
+        }
+
+        &__email {
+            margin-top: 2.5rem;
+            height: 5.5rem;
+            border-radius: 7px;
+
+        }
+
+        &__question {
+            margin-top: 4.5rem;
+            height: 10rem;
+            padding-top: 0.8rem;
+            border-radius: 7px;
+        }
+
+        &__send {
+            font-size: 2.3rem;
+            font-weight: 600;
+            color: white;
+            background-color: #da6b64;
+            // padding: 1rem 8rem;
+            border-radius: 50px;
+            height: 5.5rem;
+            text-align: center;
+            cursor: pointer;
+            margin: 4rem 0 5rem;
+
+            @include breakpoint( tablet ) {
+                margin-bottom: 7rem;
+            
+            }
+        }
+    }
+}

@@ -35,3 +35,11 @@
     
     }
 }
+
+.u-display-br-statement {
+    display: none;
+    @include breakpoint( tablet ) {
+        display: block;
+    
+    }
+}

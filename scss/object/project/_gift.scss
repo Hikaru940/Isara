@@ -19,6 +19,12 @@
             font-size: 2.4rem;
             padding-top: 6.5rem;
         }
+
+        @include breakpoint( pc ) {
+            font-size: 2.8rem;
+            line-height: 4rem;
+        
+        }
     }
 
     &__text {
@@ -34,6 +40,12 @@
             margin: 0 4.5rem 0;
             padding-top: 5rem;
             padding: 5rem 4.5rem 0;
+        }
+
+        @include breakpoint( pc ) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        
         }
 
         span {
@@ -55,8 +67,9 @@
         }
 
         @include breakpoint( pc ) {
-            margin: 0 6rem;
-        
+            // margin: 0 6rem;
+            border-radius: 125px;
+            margin: 3rem 4rem 3.7rem;
         }
         // &__content1 {
         //     width: 60px;

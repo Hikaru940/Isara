@@ -37,7 +37,7 @@
         line-height: 2.2rem;
         color: #c7254e;
         background-color: #F9F2F4;
-        width: 400px;
+        width: 450px;
         margin: 1.5rem auto 0;
         border-radius: 4px;
         font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -45,7 +45,7 @@
         @include breakpoint( pc ) {
             font-size: 1.8rem;
             line-height: 2.9rem;
-            width: 500px;
+            width: 530px;
         }
     }
 

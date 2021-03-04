@@ -202,12 +202,13 @@
         }
 
         &__image2 {
-            margin: -1.1rem auto 0;
+            margin: 0 auto 0;
             width: 31px;
             height: 30px;
             object-fit: cover;
             
             @include breakpoint( tablet ) {
+                margin-top: -1.1rem;
                 width: 73px;
                 height: 70px;
             }
@@ -232,6 +233,7 @@
             object-fit: cover;
             
             @include breakpoint( tablet ) {
+                margin-top: 0.5rem;
                 width: 55px;
                 height: 53px;
             }
