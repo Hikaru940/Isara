@@ -1,7 +1,7 @@
 .p-container-main-visual {
     position: absolute;
     top: 2rem;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 
@@ -13,6 +13,9 @@
 
 .p-container-introduction {
     position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     top: 3rem;
     z-index: 10;
 }

@@ -2,6 +2,10 @@
     position: relative;
     // width: 100vw;
     text-align: center;
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin: auto;
     
 
     &__image {
@@ -17,7 +21,7 @@
         }
 
         @include breakpoint( pc ) {
-            width: 100vw;
+            width: 100%;
             object-fit: cover;
             padding-top: 0px;
         
@@ -29,7 +33,7 @@
         font-weight: 600;
         line-height: 4rem;
         color: #333333;
-        width: 100vw;
+        width: 100%;
         margin: 0 auto;
         padding-top: 2.5rem;
         position: relative;
