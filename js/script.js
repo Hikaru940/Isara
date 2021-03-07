@@ -1,5 +1,31 @@
 $(function() {
 
+    $('a[href="#link').click(function() {
+        let headerHight = 70;
+        let speed = 300;
+        let href = $(this).attr("href");
+        let target = $(href == "#" || href == "" ? 'html' : href);
+        let position = target.offset().top-headerHight;
+        $('body,html').animate({
+            scrollTop: position
+        }, speed, 'swing');
+        return false;
+    });
+
+    jQuery(window).on("scroll", function() {
+        if(jQuery(this).scrollTop() > 100) {
+            jQuery('.c-floating').show();
+        } else {
+            jQuery('.c-floating').hide();
+        }
+    });
+
+    $('.c-floating').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 200);
+        return false;
+    });
     
     
     if (window.matchMedia( "(max-width: 600px)" ).matches) {

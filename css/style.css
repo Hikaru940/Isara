@@ -316,6 +316,26 @@ a {
   }
 }
 
+.c-floating {
+  position: fixed;
+  z-index: 110;
+  right: 8px;
+  bottom: 20px;
+  padding: 15px 15px;
+  background-color: #ececec;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+@media (min-width: 600px) {
+  .c-floating {
+    bottom: 90px;
+    right: 50px;
+    padding: 13px 20px;
+    font-size: 35px;
+  }
+}
+
 .p-main-visual {
   position: relative;
 }
